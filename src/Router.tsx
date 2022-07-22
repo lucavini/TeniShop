@@ -5,7 +5,12 @@ import React from 'react';
 import Detail from './pages/Detail';
 import Home from './pages/Home';
 
-const Stack = createNativeStackNavigator();
+export type RootStackProps = {
+  Home: undefined,
+  Detail: undefined,
+}
+
+const Stack = createNativeStackNavigator<RootStackProps>();
 
 function Routes() {
   return (
@@ -20,7 +25,6 @@ function Routes() {
         <Stack.Screen
           name='Detail'
           component={Detail}
-          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
