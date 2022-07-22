@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello world!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor='#000' translucent={true}/>
     </View>
   );
 }
