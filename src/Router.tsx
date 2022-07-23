@@ -7,7 +7,7 @@ import Home from './pages/Home';
 
 export type RootStackProps = {
   Home: undefined,
-  Detail: undefined,
+  Detail: {title: string},
 }
 
 const Stack = createNativeStackNavigator<RootStackProps>();

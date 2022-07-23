@@ -1,6 +1,6 @@
 import React from 'react';
 import { MaterialIcons } from '@expo/vector-icons';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack'
+import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { useNavigation } from '@react-navigation/native';
 import {
   Image,
@@ -57,13 +57,13 @@ const Home = () => {
             img={shoe1}
             cost='140,90'
             name='Nike Shox 10 super delux edition'
-            onClick={() => navigation.navigate('Detail')}
+            onClick={() => navigation.navigate('Detail', {title: 'Nike Shox 10 super delux edition'})}
           />
           <Shoes
             img={shoe2}
             cost='190,90'
             name='Nike Red Road'
-            onClick={() => navigation.navigate('Detail')}
+            onClick={() => navigation.navigate('Detail', {title: 'Nike Red Road'})}
           />
         </View>
 
