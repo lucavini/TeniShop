@@ -11,6 +11,7 @@ import detail from '../../assets/detail.png';
 import Dot from '../../components/Dot';
 import ShoeSize from '../../components/ShoeSize';
 import BuyButton from '../../components/BuyButton';
+import Footer from '../../components/Footer';
 
 // types
 type Props = {
@@ -79,6 +80,8 @@ const Detail = ({ navigation, route }: Props) => {
         <BuyButton />
 
         <View style={styles.divider} />
+        
+        <Footer />
       </View>
     </ScrollView>
   );
